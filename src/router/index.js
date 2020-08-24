@@ -19,6 +19,11 @@ Vue.use(VueRouter)
     path: '/pathTwo',
     name: 'backTopTwo',
     component: () => import ('../views/backTopTwo')
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import ('../views/Login')
   }
 ]
 
