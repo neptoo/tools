@@ -1,11 +1,13 @@
-## 基于ElementUI 封装组件
+## Package components based on ElementUI
 
-### 回到顶部组件
+### Back To Top
 
 keywords:
 
-- 在`index.js`注册全局组件，引入BackTop
-- BackTop中如何让所有页面都有回到顶部的功能——`slot`
+- Register global components in `index.js`, and import `back-top` in App.vue
+- How to make BackTop available on all pages ——`slot`
 
 > <back-top> <router-view /> </back-top>
+
+### Login
 

@@ -2,13 +2,13 @@
   <div>
     <el-form :model="ruleForm" :rules="rules" ref="ruleForm">
       <el-form-item prop="username">
-        <el-input placeholder="请输入用户名" v-model="ruleForm.username">
+        <el-input placeholder="username" v-model="ruleForm.username">
           <i slot="prefix" class="el-icon-user"></i>
         </el-input>
       </el-form-item>
       <el-form-item prop="password">
         <el-input
-          placeholder="请输入密码"
+          placeholder="password"
           show-password
           v-model="ruleForm.password"
         >
@@ -17,7 +17,7 @@
       </el-form-item>
       <el-form-item>
         <el-button type="primary" class="loginBtn" @click="login"
-          >登录</el-button
+          >Login</el-button
         >
       </el-form-item>
     </el-form>
@@ -40,8 +40,10 @@ export default {
     login() {
       this.$refs.ruleForm.validate((valid) => {
         if (valid) {
+          // if valid, dispatch event
           this.$emit("submit");
         } else {
+          // if false, error handle
           this.$emit("errHandle");
         }
       });

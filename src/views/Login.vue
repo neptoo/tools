@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <h1>Normal Login Component</h1>
+    <h1>Login</h1>
     <div class="account">
       <account-login :rule-form="ruleForm" :rules="rules"
       @submit="submit" @errHandle="errHandle"></account-login>
@@ -39,7 +39,7 @@ export default {
           {
             min: 6,
             max: 10,
-            message: `The password is between 6 and 10 characters.`,
+            message: `Min.6 char`,
             trigger: "blur",
           }
         ]
@@ -51,7 +51,7 @@ export default {
       this.$message.success('Submitted successfully')
     },
     errHandle(){
-      this.$message.error('Incorrect form filling')
+      this.$message.error('Please check your username and password and try again.')
     }
   }
 };
