@@ -11,3 +11,18 @@ keywords:
 
 ### Login
 
+#### data
+
+- Form object: username and password
+- Input validation rules for the form
+
+Log in and distribute the event: true or false
+
+![login-success](./src/assets/login1.png)
+
+
+![login-error](./src/assets/login2.png)
+
+### Phone verification code
+
+![login-error](./src/assets/login3.png)
