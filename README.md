@@ -26,3 +26,7 @@ Log in and distribute the event: true or false
 ### Phone verification code
 
 ![phone-login](https://raw.githubusercontent.com/neptoo/tools/master/src/assets/login3.PNG)
+
+if phone num is false, change the btnText, timer counts down, btn disabled
+
+The countdown is over, btnText changed, clearInterval

@@ -16,7 +16,7 @@
         @send="send"
         @submit="submit"
         @errHandle="errHandle"
-        :countDown = "30"
+        :countDown = "59"
       ></phone-login>
     </div>
   </div>
